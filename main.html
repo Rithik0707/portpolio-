@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>R. Suriyamoorthy Portfolio </title>
+    <title>R. Suriyamoorthy Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
@@ -12,51 +12,69 @@
             padding: 0;
             background: #f0f0f0;
             color: #333;
+            border: 5px solid;
+            border-image-source: linear-gradient(to left, red, yellow, green, blue);
+            border-image-slice: 1;
         }
         nav {
-            background-color: #4caf78;
+            background-color: #FF5733;
             display: flex;
             justify-content: center;
             padding: 10px 0;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-image: linear-gradient(83deg, #8b55f5, #f16fa1);
         }
         nav a {
             color: white;
             text-decoration: none;
             margin: 0 10px;
             font-size: 1.2em;
+            
         }
         nav a:hover {
             text-decoration: underline;
         }
         header {
-            background-color: #4CAF50;
+            background-image: url('https://i.pinimg.com/originals/e4/80/72/e4807255da9fc1fa2ebb5c8e036434b1.gif');
+            background-size: cover;
+            position: relative;
+            margin: 0px;
+            padding: 0px;
+            height: 180px;
+            overflow: hidden;
             color: white;
-            
             text-align: center;
             display: flex;
             align-items: center;
             justify-content: center;
+            
+
         }
         .container {
             position: relative;
-          }
-       .topleft {
+        }
+        .topleft {
             position: absolute;
             top: 10px;
             left: 100px;
             font-size: 100px;
-          }
-          
-          img { 
-            width: 80%;
+            background-image: linear-gradient(83deg, #8b55f5, #f16fa1);
+        }
+        img {
+            width: 35%;
             height: auto;
-            opacity: 0.9;
-          }
-        
+            opacity: 100;
+            border-radius: 40%;
+        }
         h1 {
             margin: 0;
             font-size: 2.5em;
+            font-weight: bold;
+        }
+        small {
+            display: block;
+            margin-top: 10px;
+            font-size: 1em;
         }
         .slider {
             position: relative;
@@ -101,25 +119,27 @@
         }
         .about, .resume, .projects, .contact {
             margin-bottom: 20px;
+
         }
         h2 {
-            color: #4CAF50;
+            color: #060011;
         }
         .about p {
             line-height: 1.6;
+        
         }
         .resume a, .projects a {
             display: inline-block;
             margin-top: 10px;
             padding: 10px 20px;
-            background-color: #4CAF50;
+            background-image: linear-gradient(83deg, #8b55f5, #f16fa1);
             color: white;
             text-decoration: none;
             border-radius: 4px;
-        }
+            }
         .resume a:hover, .projects a:hover {
-            background-color: #45a049;
-        }
+            background-image: linear-gradient(83deg, #8b55f5, #f16fa1);
+            }
         .links ul {
             list-style: none;
             padding: 0;
@@ -128,7 +148,7 @@
             margin-bottom: 10px;
         }
         .links a {
-            color: #4CAF50;
+            color: #c2ff33;
             text-decoration: none;
         }
         .links a:hover {
@@ -140,17 +160,70 @@
             margin-right: 10px;
             vertical-align: middle;
         }
-    
+        
+        .projects {
+            background-image: linear-gradient( #f16fa1);
+        }
+            
+        @keyframes slide {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .slide-animation {
+            animation: slide 2s infinite;
+        }
+        .projects {
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        .projects h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .projects table {
+            width: 100%;
+            table-layout: fixed;
+        }
+        
+        .projects td {
+            width: 33%;
+            vertical-align: top;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        
+        .projects .project-description {
+            text-align: justify;
+        }
+        
+        .projects li {
+            list-style-type: none;
+        }
+        
+        .projects h3 {
+            margin: 0 0 10px;
+        }
+        
+        .projects a {
+            display: inline-block;
+            margin-top: 10px;
+            color: black;
+            text-decoration: underline;
+        }
         
     </style>
 </head>
 <body>
     <header id="home">
+        <h1>SURIYAMOORTHY RameshKavitha</h1>
+        <centre>Started as Student IETE | Startup TN Winner | Winner Technoverse2023 | Patent Holder | Content Writer | Student Ambassador | Social Activist | Intern | SEO | Founder of PB | Texas Instrumentation | Prefinal Year Student</cent>
         <div class="container">
-            <img src="F:\my port\image\image.jpg" alt="R. Suriyamoorthy" width="100" height="150">          </div>
-         <h1>SURIYAMOORTHY RameshKavitha
-            Start as Student IETE | Startup TN Winner | Winner Technoverse2023| Patent holder | content Writer | student ambassador | social activist | Intern | SEO | founder of PB | Texas Instrumentation| Prefinal year student
-         </h1>
+            <img src="F:\my port\image\image.jpg" alt="img" width="100" height="150">
+                    </div>
     </header>
     <nav>
         <a href="#home">Home</a>
@@ -159,15 +232,14 @@
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
-
     <div class="slider">
-        <div class="slides">
-            <img src="F:\my port\image\slide1.jpeg" alt="Slide 1">
-            <img src="F:\my port\image\slide2.jpeg" alt="Slide 2">
-            <img src="F:\my port\image\slide3.jpeg" alt="Slide 3">
-            <img src="F:\my port\image\slide4.jpeg" alt="Slide 4">
-            <img src="F:\my port\image\slide5.jpeg" alt="Slide 5">
-            <img src="F:\my port\image\slide3.jpeg" alt="Slide 6">
+        <div class="slides slide-animation">
+            <img src="F:/my port/image/slide1.jpeg" alt="Slide 1">
+            <img src="F:/my port/image/slide2.jpeg" alt="Slide 2">
+            <img src="F:/my port/image/slide3.jpeg" alt="Slide 3">
+            <img src="F:/my port/image/slide4.jpeg" alt="Slide 4">
+            <img src="F:/my port/image/slide5.jpeg" alt="Slide 5">
+            <img src="F:/my port/image/slide3.jpeg" alt="Slide 6">
         </div>
         <div class="navigation">
             <button class="prev">&#10094;</button>
@@ -177,146 +249,140 @@
     <section class="about" id="about">
         <h2>About Me</h2>
         <p align="justify">
-            In my journey, I've blended personal growth and community impact, highlighting my commitment through internships, social activities, projects, and donations. Internships expanded my horizons, instilled a strong work ethic, and deepened my professional understanding. As a Brand Executive at TEACHNOOK, I honed marketing and communication skills. My Project Intern role at Real Sports AI demonstrated dedication to innovation. As an Engineer Intern at Kodacy, I embraced software complexity, enhancing my problem-solving skills.Social activism is a core aspect of my journey. Through "Step-up," I actively engage in volunteer work for NGOs, emphasizing skill-building and raising awareness on issues like equality, politics, and stress management. This experience has cultivated empathy and effective teamwork.A passion for innovation drives my project work. Currently, I'm writing a paper for journal publication in OCR, Li-Fi, and Bluetooth extender fields, pushing the boundaries of technology and knowledge dissemination.My commitment to betterment extends beyond volunteerism. Donating engineering books to my department's library reflects my dedication to education and knowledge sharing, strengthening the sense of community and a desire for positive change.Companies' HR departments should be attracted to my profile because it reflects an adaptable, hardworking individual with a strong work ethic, innovation commitment, and social responsibility. I'm a candidate who can excel within their organization and contribute positively to the community, aligning with their values. My journey combines personal excellence with a commitment to societal betterment.Thank you for considering my profile; it's a promising journey awaiting launch.</p>
+            In my journey, I've blended personal growth and community impact, highlighting my commitment through internships, social activities, projects, and donations. Internships expanded my horizons, instilled a strong work ethic, and deepened my professional understanding. As a Brand Executive at TEACHNOOK, I honed marketing and communication skills. My Project Intern role at Real Sports AI demonstrated dedication to innovation. As an Engineer Intern at Kodacy, I embraced software complexity, enhancing my problem-solving skills.
+            Social activism is a core aspect of my journey. Through "Step-up," I actively engage in volunteer work for NGOs, emphasizing skill-building and raising awareness on issues like equality, politics, and stress management. This experience has cultivated empathy and effective teamwork.
+            A passion for innovation drives my project work. Currently, I'm writing a paper for journal publication in OCR, Li-Fi, and Bluetooth extender fields, pushing the boundaries of technology and knowledge dissemination.
+            My commitment to betterment extends beyond volunteerism. Donating engineering books to my department's library reflects my dedication to education and knowledge sharing, strengthening the sense of community and a desire for positive change.
+            Companies' HR departments should be attracted to my profile because it reflects an adaptable, hardworking individual with a strong work ethic, innovation commitment, and social responsibility. I'm a candidate who can excel within their organization and contribute positively to the community, aligning with their values. My journey combines personal excellence with a commitment to societal betterment.
+            Thank you for considering my profile; it's a promising journey awaiting launch.
+        </p>
     </section>
     <section class="resume" id="resume">
         <h2>Resume</h2>
-        <a href="F:\my port\myresume\resume_may_2024.docx" download>Download My Resume</a>
-        <h2>Coverletter</h2>
-        <a href="F:\my port\myresume\coverletter.docx" download>Download My Coverletter </a>
-        </a>
+        <a href="F:/my port/myresume/resume_may_2024.docx" download>Download My Resume</a>
+        <h2>Cover Letter</h2>
+        <a href="F:/my port/myresume/coverletter.docx" download>Download My Cover Letter</a>
     </section>
-
-    <section class="projects" id="projects details">
+    <section class="projects" id="projects">
         <h2>Projects</h2>
         <ul>
             <table>
-                <td>
-                    <li>
-                        <h3 id="Pettikadai" style="cursor:pointer;">Pettikadai</h3>
-                        <p>Description of the Pettikadai project...</p>
-                        <a href="F:\my port\myprojectdetails\Pettikadai.pptx" download>Download Project Document</a>
-                    </li></td>
+                <tr>
                     <td>
                         <li>
-                            <h3 id="F:\my port\myprojectdetails\DRONE_PB.pptx" style="cursor:pointer;">Revolutionizing Response Drone Creating Versatile Solutions for India's Critical Needs like flood 
-                            </h3>
-                            <p align="justify">The primary focus is on serving human needs efficiently in the pandemic situations like flood.  An average every year in India 1600 lives are lost due to the Flood. We can serve the basic medical resources and basic need for the peoples in the critical situations.  We use drones for delivering the medical needs alternative for the helicopters. 
-                            </p>
+                            <h3 id="Pettikadai" style="cursor:pointer;">Pettikadai</h3>
+                            <p class="project-description">Description of the Pettikadai project...</p>
+                            <a href="https://docs.google.com/presentation/d/1-7tYRYpy9oMC3xP6s22kLhTM5yHFepX6/edit?usp=sharing&ouid=115036295662974003211&rtpof=true&sd=true" download>Download Project Document</a>
                         </li>
                     </td>
-                
-                <td> 
-                    <li>
-                        <h3> Agri based </h3>
-                        <p>Description of the Agri </p>
-                        <a href="F:\my port\myprojectdetails\agri_pb.pptx" download>Download Project Document</a>
-                    </li>
-                </td>
-                <td>
-                    <li>
-                        <h3>Automatic Road sign detection using neral networks </h3>
-                        <p align="justify">This project leverages Raspberry Pi and advanced image processing to create a robust traffic sign detection system. Overcoming challenges in low light, adverse weather, and distorted sign conditions, it employs adaptive algorithms and machine learning for real-time recognition. At present human beings are facing many accidents during the road ways transportation. At the same time they lose their life and valuable properties in these accidents. To avoid these problems this system designed with the help of Raspberry Pi. The digital image processing plays important role in the sign capturing and detection system. Specifically, we created a road sign recognition system based on an embedded system that reads and recognises road signs requirements and difficulties behind implementing real time base system with embedded system and how to deal with numbers using image processing techniques based on shape and dimension analysis. This project also shows the techniques used for classification and recognition. In this project lightweight techniques were mainly used due to limitation of real time-based applications and raspberry Pi capabilities. Web Camera is used to capture the road signs with image enhancement techniques the embedded systems small computing platform studies the characteristics of speed and road signs. In daylight vision time to take the shape analysis for recognising the sign using Image Processing. Raspberry Pi is the main target for the implementation as it provides an interface between sensors, database and image processing results, while also performing functions to manipulate peripheral units 
-
-                        </p>
-                        <a href="F:\my port\myprojectdetails\final_sign.pptx"download>Download Project Document</a>
-                    </li>
-                </td><td>
-                    <li>
-                        <h3>Smart news paper reading sysytem using neural networks </h3>
-                        <p>Description of the SEE - SPeachenabled explorer  project...</p>
-                        <a href="F:\my port\myprojectdetails\SEE.pptx" download>Download Project Document</a>
-                    </li>
-                    </td>
-                    
                     <td>
-                    <li>
-                        <h3>Lora based rover </h3>
-                        <p>Description of the Rover project...</p>
-                        <a href="F:\my port\myprojectdetails\LORA_final.pptx" download>Download Project Document</a>
-                    </li>
+                        <li>
+                            <h3 id="DroneProject" style="cursor:pointer;">Revolutionizing Response Drone Creating Versatile Solutions for India's Critical Needs like Flood</h3>
+                            <p class="project-description">Drones deliver essential medical supplies during floods, saving lives efficiently.</p>
+                            <a href="https://docs.google.com/presentation/d/13AvFIc7fg_N-m6zUWWJ5XAk4kbA9K-cQ/edit?usp=drive_link&ouid=115036295662974003211&rtpof=true&sd=true" download>Download Project Document</a>
+                        </li>
                     </td>
                     
+                </tr>
+                <tr>
                     <td>
-                    <li>
-                        <h3>PathPartner</h3>
-                        <p>Description of the E-commerce  project...</p>
-                        <a href="F:\my port\myprojectdetails\PathPartner_final.pptx" download>Download Project Document</a>
-                    </li>
+                        <li>
+                            <h3>Automatic Road Sign Detection using Neural Networks</h3>
+                            <p class="project-description">Robust traffic sign detection using Raspberry Pi and machine learning.</p>
+                            <a href="https://docs.google.com/presentation/d/1j15YvfQmPhxU-hxOf05NsOHZ5x9wn2So/edit?usp=drive_link&ouid=115036295662974003211&rtpof=true&sd=true" download>Download Project Document</a>
+                        </li>
                     </td>
-                    <td><li>
-                    <h3>Li-Fi</h3>
-                    <p>Description of the lifi V2V project...</p>
-                    <a href="F:\my port\myprojectdetails\Lifi.ppt" download>Download Project Document</a>
-                    </li>
+                    <td>
+                        <li>
+                            <h3>Smart Newspaper Reading System using Neural Networks</h3>
+                            <p class="project-description">Neural network-powered smart newspaper reader for enhanced accessibility and convenience.</p>
+                            <a href="https://docs.google.com/presentation/d/1_naQMrdXHG8xzPxdQtof6Jus9tHvXl9R/edit?usp=drive_link&ouid=115036295662974003211&rtpof=true&sd=true" download>Download Project Document</a>
+                        </li>
                     </td>
-                 </table>
-                            </ul>
-                            <script>
-                                document.getElementById('Pettikadai').addEventListener('click', function() {
-                                    window.location.href = 'ocr_project.html';
-                                });
-                                               
-                            </script>
-                        </body> 
-                        </section>
-                    
-                    
-                    <section class="contact" id="contact">
-                    <h2>Contact</h2>
-                    <p>Connect with me through the following platforms:</p>
-                    <table>
-                    <ul>
-                    <td><li>
-                    <a href="https://www.linkedin.com/in/suriyamoorthy-rameshkavitha-63b646237/" target="_blank">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
-                        LinkedIn
-                    </a>
-                    </li></td>
-                    <td> <li>
-                    <a href="https://www.instagram.com/your-instagram-id" target="_blank">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
-                        Instagram
-                    </a>
-                    </li></td>
-                    <td> <li>
-                    <a href="https://github.com/Surdhan" target="_blank">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub">
-                        GitHub
-                    </a>
-                    </li></td>
-                    </table>       
-                    </ul>
-                    </section>
-                    
-                    
-                    
-                    <script>
-                    let slideIndex = 0;
-                    showSlides();
-                    
-                    function showSlides() {
-                    let slides = document.querySelectorAll('.slides img');
-                    for (let i = 0; i < slides.length; i++) {
-                    slides[i].style.display = 'none';
-                    }
-                    slideIndex++;
-                    if (slideIndex > slides.length) {slideIndex = 1}
-                    slides[slideIndex-1].style.display = 'block';
-                    setTimeout(showSlides, 2000); // Change image every 2 seconds
-                    }
-                    
-                    document.querySelector('.prev').addEventListener('click', () => {
-                    showSlides(slideIndex -= 1);
-                    });
-                    
-                    document.querySelector('.next').addEventListener('click', () => {
-                    showSlides(slideIndex += 1);
-                    });
-                    </script>
-                    </body>
-                    </html>
-                    
-                                                                
-                                                        
-                
+                    <td>
+                        <li>
+                            <h3>Lora-based Rover</h3>
+                            <p class="project-description">LoRa-based rover for long-range communication and remote exploration.</p>
+                            <a href="https://docs.google.com/presentation/d/1PT-6YzEbOsb881jPScgQ5o-9YHO3ofFK/edit?usp=drive_link&ouid=115036295662974003211&rtpof=true&sd=true" download>Download Project Document</a>
+                        </li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <li>
+                            <h3>PathPartner</h3>
+                            <p class="project-description">PathPartner: Android app for booking taxis, bikes, and cars.</p>
+                            <a href="https://docs.google.com/presentation/d/1zhcwnS_QgPO9mE0exAIoTnuKm7AyqfUJ/edit?usp=drive_link&ouid=115036295662974003211&rtpof=true&sd=true" download>Download Project Document</a>
+                        </li>
+                    </td>
+                    <td>
+                        <li>
+                            <h3>LI-FI ENABLED SMART TRAFFIC MANAGEMENT SYSTEM FOR VEHICLE-TO-VEHICLE COMMUNICATION</h3>
+                            <p class="project-description">Li-Fi: High-bandwidth, secure vehicular communication for next-gen traffic management.</p>
+                            <a href="https://docs.google.com/presentation/d/10CXJGwAxRLi8urpLZBUPqB7fqJyy1njh/edit?usp=drive_link&ouid=115036295662974003211&rtpof=true&sd=true" download>Download Project Document</a>
+                        </li>
+                    </td>
+                </tr>
+            </table>
+        </ul>
+    </section>
+    
+    
+    <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <p>Connect with me through the following platforms:</p>
+        <table>
+            <ul><td>
+            <li>
+                <a href="https://www.linkedin.com/in/suriyamoorthy-rameshkavitha-63b646237/" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
+                    LinkedIn
+                </a>
+            </li>
+        </td>
+            <td><li>
+                <a href="https://www.instagram.com/your-instagram-id" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                    Instagram
+                </a>
+            </li>
+        </td>
+           <td> <li>
+                <a href="https://github.com/Surdhan" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub">
+                    GitHub
+                </a>
+            </li>
+        </td>
+            <td><li>
+                <a href="http://www.youtube.com/@suriyamoorthy4960" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube">
+                    YouTube
+                </a>
+            </li>
+        </td>
+        </ul> </table>
+        
+    </section>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        function showSlides() {
+            let slides = document.querySelectorAll('.slides img');
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = 'block';
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        document.querySelector('.prev').addEventListener('click', () => {
+            showSlides(slideIndex -= 1);
+        });
+        document.querySelector('.next').addEventListener('click', () => {
+            showSlides(slideIndex += 1);
+        });
+    </script>
+</body>
+</html>
